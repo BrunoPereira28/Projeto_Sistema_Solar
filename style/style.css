@@ -6,17 +6,27 @@
 
 .cabecalho {
     background-color: var(--cor-terciaria);
-    padding: 1px 0 1px 0;
+    padding: 10px 0 10px 0;
 }
 
-.menu{
+.menu {
     list-style: none;
-}
-
-.lista__header{
+    display: flex;
+    gap: 15px; 
+  }
+  
+  .lista__header {
     text-decoration: none;
     color: var(--cor-secundaria);
-}
+    padding: 5px 10px;
+    transition: 0.3s;
+  }
+  
+  .lista__header:hover {
+    color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+    border-radius: 5px;
+  }
 
 body {
     background-color: var(--cor-secundaria);
@@ -123,8 +133,8 @@ li{
 
 .footer__texto{
     background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
     text-align: center;
-    font-size: 1.2em;
     padding: 20px;
     margin-bottom: 0;
 }
