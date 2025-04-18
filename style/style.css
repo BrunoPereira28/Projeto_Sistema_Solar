@@ -12,21 +12,24 @@
 .menu {
     list-style: none;
     display: flex;
-    gap: 15px; 
-  }
+    gap: 15px;
+}
   
-  .lista__header {
+.lista__header {
     text-decoration: none;
     color: var(--cor-secundaria);
     padding: 5px 10px;
     transition: 0.3s;
-  }
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+}
   
-  .lista__header:hover {
+.lista__header:hover {
     color: var(--cor-primaria);
     background-color: var(--cor-secundaria);
     border-radius: 5px;
-  }
+}
 
 body {
     background-color: var(--cor-secundaria);
@@ -34,7 +37,7 @@ body {
 }
 
 .sistema_solar {
-    padding-top: 50px;
+    padding-top: 2rem;
     display: block; 
     margin-left: auto;
     margin-right: auto;
@@ -55,10 +58,6 @@ p{
     padding: 0 10px 0 10px;
 }
 
-li{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3em;
-}
 .sol {
     padding-top: 50px;
     display: block; 
@@ -131,12 +130,15 @@ li{
     width: 33%;
 }
 
-.footer__texto{
+footer {
     background-color: var(--cor-terciaria);
+    padding: 1rem;
+    margin-bottom: 0;
+}
+
+.footer__texto{
     color: var(--cor-secundaria);
     text-align: center;
-    padding: 20px;
-    margin-bottom: 0;
 }
 
 @media screen and (max-width: 720px) {
@@ -144,7 +146,7 @@ li{
         width: 80%;
     }
     .sol {
-        width: 95%;
+        width: 60%;
     }
     .mercurio {
         width: 60%;
@@ -153,19 +155,19 @@ li{
         width: 60%;
     }
     .terra {
-        width: 80%;
+        width: 60%;
     }
     .marte {
-        width: 55%;
+        width: 60%;
     }
     .jupiter {
         width: 60%;
     }
     .saturno {
-        width: 90%;
+        width: 70%;
     }
     .urano {
-        width: 90%;
+        width: 60%;
     }
     .netuno {
         width: 60%;
